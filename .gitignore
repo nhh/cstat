@@ -1,0 +1,6 @@
+.DS_Store
+.idea
+obj/
+bin/
+!bin/.gitkeep
+!obj/.gitkeep
