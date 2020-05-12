@@ -16,6 +16,10 @@ namespace Cstat
                             var command = new CpuCommand();
                             command.Execute();
                             break;
+                        case "ram":
+                            var ram = new RamCommand();
+                            ram.Execute();
+                            break;
                     }
                 });
         }
