@@ -12,10 +12,8 @@ namespace Cstat.Commands
 
         public void Execute()
         {
-            // Start the child process.
 
             var diskFree = ReadDiskFree();
-
             var infos = new List<DiskMetric>();
             const string pattern = @"[\S]+";
 
@@ -46,8 +44,7 @@ namespace Cstat.Commands
 
                     infos.Add(metric);
 
-                }
-                catch (FormatException _exception)
+                } catch (FormatException _exception)
                 { }
             }
 
@@ -56,7 +53,7 @@ namespace Cstat.Commands
 
         private string ReadDiskFree()
         {
-            using var p = new Process();
+            var p = new Process();
             p.StartInfo.UseShellExecute = false;
             p.StartInfo.RedirectStandardOutput = true;
             p.StartInfo.FileName = "/bin/bash";
