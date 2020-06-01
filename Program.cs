@@ -1,6 +1,6 @@
-﻿using CommandLine;
-using Cstat.Command;
-using Cstat.Option;
+using Cstat.Commands;
+using Cstat.Options;
+using CommandLine;
 
 namespace Cstat
 {
@@ -19,6 +19,10 @@ namespace Cstat
                         case "ram":
                             var ram = new RamCommand();
                             ram.Execute();
+                            break;
+                        case "disk":
+                            var disk = new DiskCommand();
+                            disk.Execute();
                             break;
                     }
                 });

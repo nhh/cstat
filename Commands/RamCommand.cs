@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 
-namespace Cstat.Command
+namespace Cstat.Commands
 {
-    public class RamCommand
-    {
+    public class RamCommand : ICommand {
 
         public void Execute()
         {

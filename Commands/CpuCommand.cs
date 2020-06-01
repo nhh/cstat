@@ -1,10 +1,10 @@
 using System;
 using System.Diagnostics;
-using Cstat.Statistic;
+using Cstat.Metrics;
 
-namespace Cstat.Command
+namespace Cstat.Commands
 {
-    public class CpuCommand
+    public class CpuCommand : ICommand
     {
 
         public void Execute()

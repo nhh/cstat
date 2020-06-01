@@ -1,6 +1,6 @@
 using CommandLine;
 
-namespace Cstat.Option
+namespace Cstat.Options
 {
     public class MetricOption
     {
